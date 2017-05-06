@@ -60,7 +60,7 @@ public final class PacketBufferPatch
 				arr = ArrayUtils.addAll(arr, arr1);
 			}
 
-			return CompressedStreamTools.func_152457_a(arr, new NBTSizeTracker(Long.MAX_VALUE));
+			return CompressedStreamTools.func_152457_a(arr, new NBTSizeTracker(CoreMod.unpackNbtLimit ? 2097152 : Long.MAX_VALUE));
 		}
 	}
 }
